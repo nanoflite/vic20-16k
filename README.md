@@ -125,7 +125,7 @@ BASIC segment is in RAM, CODE segment is in RAM1.
 Link:
 
 ```
-ld65  -Ln hello-1.lbl -m hello-1.map -C vic20-16k-asm-2.cfg -o hello-2.prg main.o
+ld65  -Ln hello-2.lbl -m hello-2.map -C vic20-16k-asm-2.cfg -o hello-2.prg main.o
 ```
 
 Result:
@@ -173,7 +173,7 @@ BASIC and CODE segment are in RAM, but CODE is placed at a fixed offset and RAM 
 Link:
 
 ```
-ld65  -Ln hello-1.lbl -m hello-1.map -C vic20-16k-asm-2.cfg -o hello-2.prg main.o
+ld65  -Ln hello-3.lbl -m hello-3.map -C vic20-16k-asm-3.cfg -o hello-3.prg main.o
 ```
 
 Result:
