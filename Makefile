@@ -21,8 +21,8 @@ all: $(PRG1) $(PRG2)
 $(PRG1): $(OBJS) $(CFG1)
 	$(LD) -Ln $(NAME)-1.lbl -m $(NAME)-1.map -C $(CFG1) -o $(PRG1) $(OBJS)
 
-$(PRG2): $(OBJS) $(CFG1)
-	$(LD) -Ln $(NAME)-1.lbl -m $(NAME)-1.map -C $(CFG2) -o $(PRG2) $(OBJS)
+$(PRG2): $(OBJS) $(CFG2)
+	$(LD) -Ln $(NAME)-2.lbl -m $(NAME)-2.map -C $(CFG2) -o $(PRG2) $(OBJS)
 
 run1: all
 	$(VIC) $(PRG1)
